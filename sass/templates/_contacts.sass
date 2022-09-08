@@ -1,0 +1,67 @@
+.contacts
+    padding-bottom: 5.625rem
+    &-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 392px
+        height: 290px
+        padding: 2.5875rem 3rem
+        background: $blue
+        border-radius: 10px
+        margin-bottom: 1.5rem
+        margin-left: 2.5rem
+        &:last-of-type
+            margin-bottom: 0
+        &__title
+            font-size: 24px
+            line-height: 140%
+            margin-bottom: 1.25rem
+        &__desc
+            position: relative
+            font-family: ProximaRegular
+            font-size: 14px
+            line-height: 135%
+            margin-bottom: 1.25rem
+            margin-left: 2.5rem
+            &:first-of-type
+                margin-top: 1.875rem
+                &::before
+                    position: absolute
+                    content: ''
+                    background: url('../img/mark.svg')
+                    width: 20px
+                    height: 20px
+                    left: -2.5rem
+                    top: -3px
+            &:nth-of-type(2)
+                &::before
+                    position: absolute
+                    content: ''
+                    background: url('../img/metro.svg')
+                    width: 20px
+                    height: 20px
+                    left: -2.5rem
+                    top: -3px
+            &:last-of-type
+                margin-bottom: 1.875rem
+                &::before
+                    position: absolute
+                    content: ''
+                    background: url('../img/card.svg')
+                    width: 20px
+                    height: 20px
+                    left: -2.5rem
+                    top: -3px
+
+        &__button
+            max-width: 156px
+            font-family: ProximaRegular
+            font-style: normal
+            font-weight: 600
+            font-size: 0.8125rem
+            padding: 0.5625rem 0.9375rem

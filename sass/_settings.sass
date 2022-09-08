@@ -1,0 +1,82 @@
+*,*:before, *:after
+    box-sizing: border-box
+    margin: 0
+h1,h2,h3
+    margin: 0
+html
+    font-family: 'El Messiri', sans-serif
+    font-size: 0.875rem
+    color: $white
+    scroll-behavior: smooth
+    background: $darkblue
+a
+    color: $white
+    text-decoration: none
+.container-normal
+    max-width: 81.125rem
+    width: 100%
+    margin: auto
+.container-wide
+    max-width: 108.5rem
+    width: 100%
+    margin: auto
+.container-tight
+    max-width: 67.25rem
+    width: 100%
+    margin: auto
+.button
+    border: none
+    font-family: ProximaRegular
+    font-size: 0.8125rem
+    border-radius: 3px
+    cursor: pointer
+    &--primary
+        background: $blue
+        color: $white
+    &--secondary
+        background: $white
+        color: $blue
+.title
+    font-size: 2.625rem
+    line-height: 140%
+    text-align: center
+    font-weight: bold
+.leafs
+    &-light
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            margin-right: 11.5rem
+            width: 100%
+            height: 100%
+            background: url('../img/leaf-left-light.svg') no-repeat center
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            right: -12rem
+            width: 100%
+            height: 100%
+            background: url('../img/leaf-right-light.svg') no-repeat center
+    &-blue
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            margin-right: 11.5rem
+            width: 100%
+            height: 100%
+            background: url('../img/leaf-left-blue.svg') no-repeat center
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            right: -12rem
+            width: 100%
+            height: 100%
+            background: url('../img/leaf-right-blue.svg') no-repeat center

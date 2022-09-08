@@ -1,0 +1,52 @@
+.feedback
+    .leafs-blue
+        &::before
+            margin-right: 8.5rem
+        &::after
+            right: -9rem
+    &__title
+        margin-bottom: 7.6875rem
+    &-list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 3.75rem
+        &__item
+            font-size: 1rem
+            padding: 3.125rem 3.75rem 3.4375rem
+            max-width: 39.75rem
+            width: 100%
+            height: 21.875rem
+            background: $blue
+            border-radius: 10px
+            &--unchecked
+                font-size: 0.725rem
+                padding: 2.5rem 2.8125rem 4.4375rem 2.8125rem
+                max-width: 31.25rem
+                width: 100%
+                height: 17.25rem
+                opacity: 0.5
+    &-item
+        font-family: ProximaLight
+        &__title
+            font-weight: bold
+            margin-bottom: 0.9375rem
+        &__desc
+            margin-bottom: 1.375rem
+            &:last-of-type
+                margin-bottom: 0
+    &-slider
+        display: flex
+        justify-content: center
+        &__item
+            background: $white
+            width: 1rem
+            height: 1rem
+            border-radius: 3px
+            opacity: 0.4
+            margin-bottom: 9.375rem
+            margin-right: 1.25rem
+            &:last-of-type
+                margin-right: 0
+            &--checked
+                opacity: 1
